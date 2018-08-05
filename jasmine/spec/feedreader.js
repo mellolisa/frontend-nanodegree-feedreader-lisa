@@ -110,11 +110,11 @@ $(function() {
         const firstFeed = [];
 
         beforeEach(function(done) {
-            loadFeed(0, function () {
-              Array.from(feed.children).forEach(function(entry) {
-                  firstFeed.push(entry.innerText);
-              });
-              loadFeed(1, done);
+            loadFeed(0, function() {
+                Array.from(feed.children).forEach(function(entry) {
+                    firstFeed.push(entry.innerText);
+                });
+                loadFeed(1, done);
             });
         });
 
