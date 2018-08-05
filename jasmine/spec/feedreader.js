@@ -120,7 +120,7 @@ $(function() {
 
         it('changes when feed changes', function() {
             Array.from(feed.children).forEach(function(entry, index) {
-                expect(entry.innerText === firstFeed[index]).toBe(false);
+                expect(entry.innerText).not.toEqual(firstFeed[index]);
             });
         });
     });
